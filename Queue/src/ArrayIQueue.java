@@ -1,11 +1,11 @@
-public class ArrayQueue<T> implements Queue<T> {
+public class ArrayIQueue<T> implements IQueue<T> {
     private Array<T> array;
 
-    public ArrayQueue(int capacity){
+    public ArrayIQueue(int capacity){
         array=new Array<>(capacity);
     }
 
-    public ArrayQueue(){
+    public ArrayIQueue(){
         array=new Array<>();
     }
 
@@ -54,7 +54,7 @@ public class ArrayQueue<T> implements Queue<T> {
     }
 
     public static void main(String[] args) {
-        ArrayQueue<Integer> queue=new ArrayQueue<>();
+        ArrayIQueue<Integer> queue=new ArrayIQueue<>();
         for (int i = 0; i < 10; i++) {
             queue.enqueue(i);
             System.out.println(queue);

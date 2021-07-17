@@ -1,17 +1,17 @@
-public class LoopQueue<T> implements  Queue<T> {
+public class LoopIQueue<T> implements IQueue<T> {
 
     private  T[] data;
     private  int front, tail;
     private int size;
 
-    public LoopQueue(int capacity){
+    public LoopIQueue(int capacity){
         data=(T[]) new Object[capacity+1];
         front=0;
         tail=0;
         size=0;
     }
 
-    public LoopQueue(){
+    public LoopIQueue(){
         this(10);
     }
 
@@ -92,7 +92,7 @@ public class LoopQueue<T> implements  Queue<T> {
     }
 
     public static void main(String[] args) {
-       LoopQueue<Integer> queue=new LoopQueue<>();
+       LoopIQueue<Integer> queue=new LoopIQueue<>();
         for (int i = 0; i < 10; i++) {
             queue.enqueue(i);
             System.out.println(queue);
