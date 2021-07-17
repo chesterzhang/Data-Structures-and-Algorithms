@@ -1,11 +1,11 @@
-public class ArrayStack<T> implements Stack<T> {
+public class ArrayIStack<T> implements IStack<T> {
     Array<T> array;
 
-    public ArrayStack(int capacity) {
+    public ArrayIStack(int capacity) {
         this.array = new Array<T>(capacity);
     }
 
-    public ArrayStack() {
+    public ArrayIStack() {
         this.array = new Array<T>();
     }
 

@@ -1,7 +1,7 @@
 //用链表实现一个队列,链表头为队首,链表尾为队尾,使用两个指针head,tail
 //由于不需要在队首插入元素,故根本不需要链表的dummyhead
 
-public class LinkedListQueue<T> implements Queue<T> {
+public class LinkedListIQueue<T> implements IQueue<T> {
 
     class Node{
         private T e;
@@ -29,7 +29,7 @@ public class LinkedListQueue<T> implements Queue<T> {
     private Node tail;
     int size;
 
-    public LinkedListQueue(){
+    public LinkedListIQueue(){
         head=new Node();
         tail=new Node();
         size=0;
