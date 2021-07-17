@@ -1,12 +1,12 @@
-public class ArrayStack<T> implements Stack<T> {
-    Array<T> array;
+public class ArrayStack<E> implements IStack<E> {
+    Array<E> array;
 
     public ArrayStack(int capacity) {
-        this.array = new Array<T>(capacity);
+        this.array = new Array<E>(capacity);
     }
 
     public ArrayStack() {
-        this.array = new Array<T>();
+        this.array = new Array<E>();
     }
 
     @Override
@@ -20,17 +20,17 @@ public class ArrayStack<T> implements Stack<T> {
     }
 
     @Override
-    public void push(T e) {
+    public void push(E e) {
         this.array.addLast(e);
     }
 
     @Override
-    public T pop() {
+    public E pop() {
         return this.array.removeLast();
     }
 
     @Override
-    public T peek() {
+    public E peek() {
         return this.array.getLast();
     }
 

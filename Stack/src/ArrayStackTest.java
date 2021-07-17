@@ -1,4 +1,4 @@
-public class StackTest {
+public class ArrayStackTest {
 
     public static void main(String[] args) {
         ArrayStack<Integer> stack=new ArrayStack<>();
@@ -7,6 +7,7 @@ public class StackTest {
             System.out.println(stack);
         }
 
+        stack.pop();
         stack.pop();
         System.out.println(stack);
     }
