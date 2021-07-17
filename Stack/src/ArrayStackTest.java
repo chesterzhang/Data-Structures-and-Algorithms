@@ -1,4 +1,4 @@
-public class Main {
+public class StackTest {
 
     public static void main(String[] args) {
         ArrayStack<Integer> stack=new ArrayStack<>();

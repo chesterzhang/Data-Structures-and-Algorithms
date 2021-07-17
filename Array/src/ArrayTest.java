@@ -1,4 +1,4 @@
-public class Main {
+public class ArrayTest {
 
     public static void main(String[] args) {
         //泛型中只能放类
@@ -12,12 +12,14 @@ public class Main {
         arr.add(10,10);
         System.out.println(arr);
 
+        //测试增加元素功能
         arr.add(1,100);
         System.out.println(arr);
 
         arr.addFirst(-1);
         System.out.println(arr);
 
+        //测试删除元素功能
         arr.remove(2);
         System.out.println(arr);
 
