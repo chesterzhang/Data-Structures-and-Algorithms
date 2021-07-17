@@ -3,7 +3,7 @@ import java.util.Random;
 public class QueueTest {
 
     //测试队列q运行count个enqueue和dequeue操作时间, 单位:秒
-    private static  double test(Queue<Integer> q,int opCount){
+    private static  double test(IQueue<Integer> q, int opCount){
         long startTime =System.nanoTime();
 
         Random rd=new Random();
@@ -25,8 +25,8 @@ public class QueueTest {
     public static void main(String[] args) {
         int opCount=100000;
 
-        ArrayQueue<Integer> aq=new ArrayQueue<>();
-        LoopQueue<Integer> lq=new LoopQueue<>();
+        ArrayIQueue<Integer> aq=new ArrayIQueue<>();
+        LoopIQueue<Integer> lq=new LoopIQueue<>();
 
         System.out.println("普通队列花费时间: "+ QueueTest.test(aq,opCount));
         System.out.println("循环队列花费时间: "+ QueueTest.test(lq,opCount));

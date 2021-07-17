@@ -1,5 +1,5 @@
-public class ArrayIQueue<T> implements IQueue<T> {
-    private Array<T> array;
+public class ArrayIQueue<E> implements IQueue<E> {
+    private Array<E> array;
 
     public ArrayIQueue(int capacity){
         array=new Array<>(capacity);
@@ -24,17 +24,17 @@ public class ArrayIQueue<T> implements IQueue<T> {
     }
 
     @Override
-    public void enqueue(T e) {
+    public void enqueue(E e) {
         array.addLast(e);
     }
 
     @Override
-    public T dequeue() {
+    public E dequeue() {
         return array.removeFirst();
     }
 
     @Override
-    public T getFront() {
+    public E getFront() {
         return array.getFirst();
     }
 
@@ -53,17 +53,7 @@ public class ArrayIQueue<T> implements IQueue<T> {
         return  res.toString();
     }
 
-    public static void main(String[] args) {
-        ArrayIQueue<Integer> queue=new ArrayIQueue<>();
-        for (int i = 0; i < 10; i++) {
-            queue.enqueue(i);
-            System.out.println(queue);
-            if (i%3==2){
-                queue.dequeue();
-                System.out.println(queue);
-            }
-        }
-    }
+
 }
 
 

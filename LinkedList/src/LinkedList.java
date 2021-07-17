@@ -1,15 +1,15 @@
-public class LinkedList<T> {
+public class LinkedList<E> {
 
     private  class  Node{
-        public T e;
+        public E e;
         public Node next;
 
-        public Node(T e, Node next){
+        public Node(E e, Node next){
             this.e=e;
             this.next=next;
         }
 
-        public Node(T e){
+        public Node(E e){
             this(e,null);
         }
 
@@ -39,12 +39,12 @@ public class LinkedList<T> {
         return  size==0;
     }
 
-    public  void addFirst(T e){
+    public  void addFirst(E e){
         add(0,e);
     }
 
     //插入一个节点到索引index处
-    public void add(int index,T e){
+    public void add(int index,E e){
         if (index<0 || index>size){
             throw new IllegalArgumentException("Add failed. Illegal index.");
         }
@@ -61,11 +61,11 @@ public class LinkedList<T> {
 
     }
 
-    public void addLast(T e){
+    public void addLast(E e){
         add(size,e);
     }
 
-    public T get(int index){
+    public E get(int index){
         if (index<0 || index>=size){
             throw new IllegalArgumentException("Get failed. Illegal index.");
         }
@@ -77,11 +77,11 @@ public class LinkedList<T> {
 
     }
 
-    public T getFirst(){
+    public E getFirst(){
         return  get(0);
     }
 
-    public  void set(int index, T e){
+    public  void set(int index, E e){
         if (index<0 || index>=size){
             throw new IllegalArgumentException("Set failed. Illegal index.");
         }
@@ -92,7 +92,7 @@ public class LinkedList<T> {
         cur.e=e;
     }
 
-    public  boolean contains(T e){
+    public  boolean contains(E e){
         Node cur=dummyHead.next;
         while (cur!=null){
             if (cur.e==e){
@@ -103,7 +103,7 @@ public class LinkedList<T> {
         return  false;
     }
 
-    public T remove(int index){
+    public E remove(int index){
         if(index<0 || index >=size){
             throw  new IllegalArgumentException("Delete failed, index shoud be >=0 and < size");
         }
@@ -113,19 +113,18 @@ public class LinkedList<T> {
         }
         Node delNode=prev.next;
         prev.next=delNode.next;
-        T ret=delNode.e;
+        E ret=delNode.e;
         delNode=null;
         size--;
         return  ret;
     }
 
-    public void removeElement(T e){
-
+    public void removeElement(E e){
 
         Node prev= dummyHead;
         Node cur=dummyHead.next;
         Node delNode=null;
-        for (int i = 0; i < size -1; i++) {
+        for (int i = 0; i < size ; i++) {
             if (cur.e==e){
                 delNode=cur;
                 prev.next=delNode.next;
@@ -143,11 +142,11 @@ public class LinkedList<T> {
 
     }
 
-    public  T removeFirst(){
+    public  E removeFirst(){
         return remove(0);
     }
 
-    public  T removeLast(){
+    public  E removeLast(){
         return remove(size-1);
     }
 
