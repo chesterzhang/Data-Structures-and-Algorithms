@@ -66,7 +66,7 @@
   <tr>
     <td>BST二分搜索树</td>
     <td>什么是二分搜索树，二分搜索树的实现，二分搜索树的应用</td>
-    <td>BST二分搜索树, BST Map, BST Set[待完成]</td>
+    <td><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/bst-er-fen-sou-suo-shu" target="_blank" rel="noopener noreferrer">BST二分搜索树, BST Map, BST Set[完成]</a></td>
     <td><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/BST" target="_blank" rel="noopener noreferrer">已完成</a></td>
   </tr>
   <tr>
