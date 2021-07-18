@@ -1,4 +1,4 @@
-public class BSTMap <K extends  Comparable<K>, V> implements Map<K,V> {
+public class BSTMap <K extends  Comparable<K>, V> implements IMap<K,V> {
     private BST<K,V> bst;
 
     public BSTMap(){
