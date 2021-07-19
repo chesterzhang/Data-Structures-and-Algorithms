@@ -1,4 +1,4 @@
-public interface Set<E>{
+public interface ISet<E>{
 
     void add(E e);
     void remove(E e);

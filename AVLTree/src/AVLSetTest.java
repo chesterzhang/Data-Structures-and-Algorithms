@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 
-import java.util.Collections;
-
 public class AVLSetTest {
     public static void main(String[] args) {
         ArrayList<String> words  =new ArrayList<>();
@@ -11,7 +9,7 @@ public class AVLSetTest {
         //测试极端情况,BSTSet退化成链表,AVLSet依然稳定
         //Collections.sort(words);
 
-        AVLSet<String> avlSet= new AVLSet<>();
+        AVLISet<String> avlSet= new AVLISet<>();
         BSTSet<String> bstSet= new BSTSet<>();
 
 

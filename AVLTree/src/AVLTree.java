@@ -134,6 +134,7 @@ public class AVLTree<K extends Comparable<K>,V>  {
         if (balanceFactor<-1 && getBalanceFactor(node.right)<=0 ){
             return leftRotate(node);
         }
+
         //RL
         if (balanceFactor<-1 && getBalanceFactor(node.right)>0 ){
             node.right=rightRotate(node.right);

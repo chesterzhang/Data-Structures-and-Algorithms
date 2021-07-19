@@ -1,4 +1,4 @@
-public class AVLMap <K extends  Comparable<K>, V> implements Map<K,V> {
+public class AVLMap<K extends  Comparable<K>, V> implements IMap<K,V> {
     private AVLTree<K,V> avl;
 
     public AVLMap(){

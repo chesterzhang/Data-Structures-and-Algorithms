@@ -1,6 +1,7 @@
 public class BST<K extends Comparable<K>,V> {
 
     private class Node{
+
         public K key;
         public V value;
         public Node left,right;
@@ -28,32 +29,14 @@ public class BST<K extends Comparable<K>,V> {
         size=0;
     }
 
-
-    public void add(K key, V value) {
-        root=add(root, key,value);
-    }
-
-    //向以node为根的二分搜索树中加入e
-    //并且返回node
-    private Node add(Node node, K key, V value){
-        if (node==null){
-            size++;
-            return new Node(key,value);
-        }
-
-        //Map中不能存在相同的key
-        if (key.compareTo(node.key)==0){
-            return node;
-        }else if (key.compareTo(node.key)<0 ){
-            node.left=add(node.left,key,value);
-        }else {
-            node.right=add(node.right,key,value);
-        }
-        return  node;
+    public int getSize() {
+        return size;
     }
 
 
-
+    public boolean isEmpty() {
+        return size==0;
+    }
 
     public boolean contains(K key) {
         return contains(root ,key);
@@ -71,7 +54,6 @@ public class BST<K extends Comparable<K>,V> {
             return contains(node.right,key);
         }
     }
-
 
     public V get(K key) {
         Node retNode=getNode(root,key);
@@ -95,7 +77,6 @@ public class BST<K extends Comparable<K>,V> {
         }
     }
 
-
     public void set(K key, V newValue) {
         Node setNode=getNode(root,key);
         if (setNode!=null){
@@ -106,13 +87,42 @@ public class BST<K extends Comparable<K>,V> {
     }
 
 
-    public int getSize() {
-        return size;
+    public Node minimum(){
+        return minimum(root);
     }
 
+    //寻找二分搜索树中以node为根节点的最小的元素的节点,并返回
+    private  Node minimum( Node node){
+        if (node.left!=null){
+            return minimum(node.left);
+        }else {
+            return node;
+        }
+    }
 
-    public boolean isEmpty() {
-        return size==0;
+    //向二分搜索树中加入新节点
+    public void add(K key, V value) {
+        root=add(root, key,value);
+    }
+
+    //向以node为根的二分搜索树中加入新节点
+    //并且返回node
+    private Node add(Node node, K key, V value){
+        if (node==null){
+            size++;
+            return new Node(key,value);
+        }
+
+        //Map中不能存在相同的key, 只能修改valau
+        if (key.compareTo(node.key)==0){
+            node.value=value;
+            return node;
+        }else if (key.compareTo(node.key)<0 ){
+            node.left=add(node.left,key,value);
+        }else {
+            node.right=add(node.right,key,value);
+        }
+        return  node;
     }
 
 
@@ -124,7 +134,6 @@ public class BST<K extends Comparable<K>,V> {
         }else {
             return null;
         }
-
     }
 
     //从以node为根节点的子树中删除,并返回node
@@ -141,7 +150,7 @@ public class BST<K extends Comparable<K>,V> {
             return node;
         }else {//e==node.e
             if (node.left==null){
-               Node rightNode=node.right;
+                Node rightNode=node.right;
                 node=null;
                 size--;
                 return rightNode;
@@ -161,19 +170,13 @@ public class BST<K extends Comparable<K>,V> {
         }
 
     }
-    //寻找二分搜索树中最小的元素的节点,并返回
-    private  Node minimum( Node node){
-        if (node.left!=null){
-            return minimum(node.left);
-        }else {
-            return node;
-        }
-    }
+
+
 
     //删除以node为根节点的树的最小节点,并且返回node
     private  Node removeMin( Node node){
         if (node.left==null){
-             Node rightNode=node.right;
+            Node rightNode=node.right;
             node=null;
             size--;
             return rightNode;
@@ -183,5 +186,9 @@ public class BST<K extends Comparable<K>,V> {
     }
 
 }
+
+
+
+
 
 

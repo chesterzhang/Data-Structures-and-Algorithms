@@ -1,4 +1,4 @@
-public class BSTSet<E extends Comparable<E>>  implements Set<E> {
+public class BSTSet<E extends Comparable<E>>  implements ISet<E> {
     private  BST<E,Object> bst;
 
     public BSTSet(){

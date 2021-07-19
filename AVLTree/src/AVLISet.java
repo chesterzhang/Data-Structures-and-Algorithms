@@ -1,8 +1,8 @@
-public class AVLSet <E extends Comparable<E>>  implements  Set<E> {
+public class AVLISet<E extends Comparable<E>>  implements ISet<E> {
 
     private  AVLTree<E,Object> avl;
 
-    public AVLSet(){
+    public AVLISet(){
         avl=new AVLTree<>();
     }
 
