@@ -5,6 +5,7 @@
 ![gitbook_homepage](./picture/gitbook_homepage.png)
 ###
 
+
 <table style="undefined;table-layout: fixed; width: 790px">
 <colgroup>
 <col style="width: 187px">
@@ -72,7 +73,7 @@
   <tr>
     <td>AVL </td>
     <td>什么是AVL，AVL 的实现,AVL的应用</td>
-    <td>AVL, AVL Map, AVL Set[待完成]</td>
+    <td><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/avl-ping-heng-shu" target="_blank" rel="noopener noreferrer">AVL, AVL Map, AVL Set[已完成]</a></td>
     <td><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/AVLTree/src" target="_blank" rel="noopener noreferrer">已完成</a></td>
   </tr>
   <tr>
