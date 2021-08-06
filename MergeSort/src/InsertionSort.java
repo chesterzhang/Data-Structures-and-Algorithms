@@ -3,7 +3,7 @@ public class InsertionSort {
     private InsertionSort(){}
 
     /*
-    public static <T extends Comparable<T>> void sort(T[] arr){
+    public static <E extends Comparable<E>> void sort(E[] arr){
         for (int i = 0; i < arr.length; i++) {
             for (int j = i; j >=1 ; j--) {
                 if(arr[j].compareTo(arr[j-1])<0){
@@ -17,7 +17,7 @@ public class InsertionSort {
     */
 
     //优化后的算法,改swap操作为向后赋值
-    public static <T extends Comparable<T>> void sort(T[] arr){
+    public static <E extends Comparable<E>> void sort(E[] arr){
         for (int i = 0; i < arr.length; i++) {
             for (int j = i; j >=1 ; j--) {
                 if(arr[j].compareTo(arr[j-1])<0){
@@ -30,8 +30,8 @@ public class InsertionSort {
         }
     }
 
-    private static <T> void swap(T[] arr, int i, int j){
-        T temp=arr[i];
+    private static <E> void swap(E[] arr, int i, int j){
+        E temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
     }
