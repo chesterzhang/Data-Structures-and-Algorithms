@@ -16,7 +16,7 @@ public class MergeSort {
         int mid=l+(r-l)/2; //  等价于(l+r)/2
         sort(arr, l,mid);
         sort(arr,mid+1,r);
-        if(arr[mid+1].compareTo(arr[mid])>0){
+        if(arr[mid+1].compareTo(arr[mid])>=0){
             return;
         }
         merge(arr,l,mid,r);
