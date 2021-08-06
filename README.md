@@ -6,12 +6,12 @@
 ###
 
 
-<table style="undefined;table-layout: fixed; width: 814px">
+<table style="undefined;table-layout: fixed; width: 853px">
 <colgroup>
-<col style="width: 193px">
-<col style="width: 236px">
-<col style="width: 292px">
-<col style="width: 93px">
+<col style="width: 202px">
+<col style="width: 247px">
+<col style="width: 306px">
+<col style="width: 98px">
 </colgroup>
 <thead>
   <tr>
@@ -93,6 +93,17 @@
     <td>什么是并查集, 如何实现并查集</td>
     <td>UnionFind 并查集[待完成]</td>
     <td><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/UnionFind" target="_blank" rel="noopener noreferrer">已完成</a></td>
+  </tr>
+  <tr>
+    <td rowspan="2">高级排序算法</td>
+    <td>MergeSort 归并排序</td>
+    <td><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/gao-ji-pai-xu-suan-fa/merge-sort-gui-bing-pai-xu" target="_blank" rel="noopener noreferrer">MergeSort 归并排序[已完成]</a></td>
+    <td><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/MergeSort" target="_blank" rel="noopener noreferrer">已完成</a></td>
+  </tr>
+  <tr>
+    <td>QuickSort 快速排序的三个版本</td>
+    <td><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/gao-ji-pai-xu-suan-fa/quick-sort-kuai-su-pai-xu" target="_blank" rel="noopener noreferrer">QuickSort 快速排序[已完成]</a></td>
+    <td><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/QuickSort" target="_blank" rel="noopener noreferrer">已完成</a></td>
   </tr>
 </tbody>
 </table>
