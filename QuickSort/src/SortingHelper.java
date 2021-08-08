@@ -13,9 +13,7 @@ public class SortingHelper {
     public static <T extends Comparable<T>> void sortTest(String sortName, T[] arr, int n){
 
         long startTime=System.nanoTime();
-        if (sortName.equals("InsertionSort")){
-            InsertionSort.sort(arr);
-        }else if (sortName.equals("MergeSort")){
+        if (sortName.equals("MergeSort")){
             MergeSort.sort(arr);
         } else if (sortName.equals("QuickSortOneWay")){
             QuickSort.sortOneWay(arr);
