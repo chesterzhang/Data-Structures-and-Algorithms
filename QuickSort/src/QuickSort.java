@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class QuickSort {
@@ -149,29 +150,36 @@ public class QuickSort {
 
 
     public static void main(String[] args) {
-        int n =1000000;
 
-        Integer[] arr1=ArrayGenerator.generateRandomArray(n,n);//随机数据
-        Integer[] arr2=ArrayGenerator.generateOrderedArray(n);//有序数据
-        Integer[] arr3=ArrayGenerator.generateRandomArray(n,1);//重复数据
+        int n =1000000;
 
         //对于完全随机的数组,归并和单路快排均为O(NlogN)
         //但单路快排在分治过程中,避免了频繁的数组复制操作,性能略优
+        Integer[] arr1=ArrayGenerator.generateRandomArray(n,n);//随机数据
+        Integer[] arr2= Arrays.copyOf(arr1,arr1.length);
+
         System.out.println("随机数据");
         SortingHelper.sortTest("MergeSort",arr1,n);
-        SortingHelper.sortTest("QuickSortOneWay",arr1,n);
+        SortingHelper.sortTest("QuickSortOneWay",arr2,n);
 
 
         //对于有序数组, 归并排序会进化成O(N)
+        arr1=ArrayGenerator.generateOrderedArray(n);//有序数据
+        arr2= Arrays.copyOf(arr1,arr1.length);
+
         System.out.println("有序数据");
-        SortingHelper.sortTest("MergeSort",arr2,n);
+        SortingHelper.sortTest("MergeSort",arr1,n);
         SortingHelper.sortTest("QuickSortOneWay",arr2,n);
 
-        //对于全部元素相等的数组,单路快排会退化成O(n^2),双路快排依然是O(NlogN), 三路快排进化成O(N)
+        //对于全部元素相等的数组,归并排序进化成(logN), 单路快排会退化成O(n^2),双路快排依然是O(NlogN), 三路快排进化成O(N)
+        arr1=ArrayGenerator.generateRandomArray(n,1);//重复数据
+        arr2= Arrays.copyOf(arr1,arr1.length);
+        Integer[] arr3= Arrays.copyOf(arr1,arr1.length);
+
         System.out.println("重复数据");
-        SortingHelper.sortTest("MergeSort",arr3,n);
-        //SortingHelper.sortTest("QuickSortOneWay",arr3,n);//直接达到最大递归深度, 栈溢出, 需要调小数据规模
-        SortingHelper.sortTest("QuickSortTwoWays",arr3,n);
+        SortingHelper.sortTest("MergeSort",arr1,n);
+        //单路直接达到最大递归深度, 栈溢出
+        SortingHelper.sortTest("QuickSortTwoWays",arr2,n);
         SortingHelper.sortTest("QuickSortThreeWays",arr3,n);
 
     }
