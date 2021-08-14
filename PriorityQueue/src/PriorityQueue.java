@@ -1,8 +1,8 @@
 public class PriorityQueue<E extends Comparable<E>> implements  Queue<E> {
 
-    private MaxHeap<E> maxHeap;
+    private MinHeap<E> maxHeap;
     public PriorityQueue(){
-        maxHeap=new MaxHeap<>();
+        maxHeap=new MinHeap<>();
     }
 
     @Override
@@ -22,12 +22,12 @@ public class PriorityQueue<E extends Comparable<E>> implements  Queue<E> {
 
     @Override
     public E dequeue() {
-        return maxHeap.extractMax();
+        return maxHeap.extractMin();
     }
 
     @Override
     public E getFront() {
-        return maxHeap.findMax();
+        return maxHeap.findMin();
     }
 
 }
