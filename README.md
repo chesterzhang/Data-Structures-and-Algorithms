@@ -5,7 +5,6 @@
 ![gitbook_homepage](./picture/gitbook_homepage.png)
 ###
 
-
 <table>
 <thead>
   <tr>
@@ -32,17 +31,17 @@
     <td>Stack 栈</td>
     <td>什么是栈, 栈的多种实现方式</td>
     <td><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/stack-zhan">Stack 栈[已完成]</a></td>
-    <td><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/Stack">已完成</a></td>
+    <td><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/Stack" target="_blank" rel="noopener noreferrer">已完成</a></td>
   </tr>
   <tr>
     <td>不同栈的性能比较</td>
     <td>测试与分析由动态数组，链表实现的栈之间的性能差异</td>
-    <td>不同栈的性能比较[待完成]</td>
-    <td><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/LinkedList/src">已完成</a></td>
+    <td><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/bu-tong-zhan-de-xing-neng-bi-jiao" target="_blank" rel="noopener noreferrer">不同栈的性能比较[已完成]</a></td>
+    <td><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/Stack" target="_blank" rel="noopener noreferrer">已完成</a></td>
   </tr>
   <tr>
     <td>Queue 队列</td>
-    <td>什么是栈, 栈的多种实现方式</td>
+    <td>什么是队列, 队列的多种实现方式</td>
     <td><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/queue-dui-lie">Queue 队列[已完成]</a></td>
     <td><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/Queue/src">已完成</a></td>
   </tr>
@@ -91,8 +90,8 @@
   <tr>
     <td>PriorityQueue 优先队列</td>
     <td>什么是优先队列, 优先队列的实现</td>
-    <td><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/priority-queue-you-xian-dui-lie" target="_blank" rel="noopener noreferrer">PriorityQueue 优先队列[已完成]</a></td>
-    <td><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/PriorityQueue" target="_blank" rel="noopener noreferrer">已完成</a></td>
+    <td><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/priority-queue-you-xian-dui-lie">PriorityQueue 优先队列[已完成]</a></td>
+    <td><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/PriorityQueue">已完成</a></td>
   </tr>
   <tr>
     <td>UnionFind 并查集</td>
