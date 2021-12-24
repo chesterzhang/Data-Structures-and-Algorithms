@@ -1,3 +1,10 @@
+## 欢迎来到 Chester Zhang 的 数据结构和算法 代码仓库
+####
+也欢迎访问 [我的配套 GitBook 图文教程](https://chesterzhang666.gitbook.io/data-structures-and-algorithms/)
+###
+![gitbook_homepage](./picture/gitbook_homepage.png)
+###
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
