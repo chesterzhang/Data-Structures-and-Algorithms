@@ -5,15 +5,7 @@
 ![gitbook_homepage](./picture/gitbook_homepage.png)
 ###
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-nrix{text-align:center;vertical-align:middle}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-</style>
+
 <table class="tg">
 <thead>
   <tr>
@@ -81,16 +73,16 @@
   <tr>
     <td class="tg-nrix" rowspan="3">RB-Tree 红黑树</td>
     <td class="tg-nrix" rowspan="3">什么是红黑树，红黑树的实现</td>
-    <td class="tg-nrix"><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/rbtree-hong-hei-shu/23-shu-yu-hong-hei-shu" target="_blank" rel="noopener noreferrer">2-3树与红黑树与[已完成]</a></td>
-    <td class="tg-nrix"><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/RedBlackTree" target="_blank" rel="noopener noreferrer">已完成</a></td>
+    <td class="tg-nrix"><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/rbtree-hong-hei-shu/23-shu-yu-hong-hei-shu">2-3树与红黑树与[已完成]</a></td>
+    <td class="tg-nrix"><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/RedBlackTree">已完成</a></td>
   </tr>
   <tr>
-    <td class="tg-nrix"><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/rbtree-hong-hei-shu/hong-hei-shu-de-shi-xian" target="_blank" rel="noopener noreferrer">红黑树的实现[已完成]</a></td>
-    <td class="tg-nrix"><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/RedBlackTree" target="_blank" rel="noopener noreferrer">已完成</a></td>
+    <td class="tg-nrix"><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/rbtree-hong-hei-shu/hong-hei-shu-de-shi-xian">红黑树的实现[已完成]</a></td>
+    <td class="tg-nrix"><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/RedBlackTree">已完成</a></td>
   </tr>
   <tr>
     <td class="tg-nrix">红黑树实现Set, Map[待完成]</td>
-    <td class="tg-0lax"><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/RedBlackTree" target="_blank" rel="noopener noreferrer">已完成</a></td>
+    <td class="tg-nrix"><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/RedBlackTree">已完成</a></td>
   </tr>
   <tr>
     <td class="tg-nrix">不同Map, Set的性能比较</td>
@@ -112,8 +104,8 @@
   </tr>
   <tr>
     <td class="tg-nrix">UnionFind 并查集</td>
-    <td class="tg-nrix">什么是并查集, 如何实现并查集</td>
-    <td class="tg-nrix">UnionFind 并查集[待完成]</td>
+    <td class="tg-nrix">什么是并查集, 并查集的5种实现方实</td>
+    <td class="tg-baqh"><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/union-find-bing-cha-ji" target="_blank" rel="noopener noreferrer">UnionFind 并查集[更新中]</a></td>
     <td class="tg-nrix"><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/UnionFind">已完成</a></td>
   </tr>
   <tr>
@@ -129,3 +121,4 @@
   </tr>
 </tbody>
 </table>
+ 
