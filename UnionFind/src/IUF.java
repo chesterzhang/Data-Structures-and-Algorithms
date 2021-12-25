@@ -5,7 +5,5 @@ public interface IUF {
 
     int getSize();
 
-
-
 }
 

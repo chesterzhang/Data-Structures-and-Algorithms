@@ -1,4 +1,4 @@
-//第三版并查集, union过程基于rank优化, 矮树指向高树,路径压缩
+//第五版并查集, union过程基于rank优化+路径压缩优化
 //union O(n)         O(h),h为树的高度
 //isConnected(p,q)   O(h),h为树的高度
 public class UnionFind5 implements  IUF{
