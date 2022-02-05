@@ -5,13 +5,20 @@
 ![gitbook_homepage](./picture/gitbook_homepage.png)
 ###
 
- 
-<table class="tg" style="undefined;table-layout: fixed; width: 1036px">
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-nrix{text-align:center;vertical-align:middle}
+</style>
+<table class="tg" style="undefined;table-layout: fixed; width: 1192px">
 <colgroup>
-<col style="width: 165px">
-<col style="width: 580px">
-<col style="width: 237px">
-<col style="width: 54px">
+<col style="width: 209px">
+<col style="width: 652px">
+<col style="width: 278px">
+<col style="width: 53px">
 </colgroup>
 <thead>
   <tr>
@@ -114,14 +121,14 @@
   <tr>
     <td class="tg-nrix">Trie 前缀树</td>
     <td class="tg-nrix">什么是 Trie，Trie的性能优势，实现Trie</td>
-    <td class="tg-nrix"><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/trie" target="_blank" rel="noopener noreferrer">Trie 前缀树[已完成]</a></td>
-    <td class="tg-nrix"><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/Trie" target="_blank" rel="noopener noreferrer">已完成</a></td>
+    <td class="tg-nrix"><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/trie">Trie 前缀树[已完成]</a></td>
+    <td class="tg-nrix"><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/Trie">已完成</a></td>
   </tr>
   <tr>
     <td class="tg-nrix">SegmentTree 线段树</td>
     <td class="tg-nrix">什么是 线段树，线段树的使用场景，实现线段树</td>
-    <td class="tg-nrix"><a href="https://app.gitbook.com/s/-MeiB9SaHyf3ldMBUG1M/segment-tree-xian-duan-shu" target="_blank" rel="noopener noreferrer">SegmentTree 线段树[已完成]</a></td>
-    <td class="tg-nrix"><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/SegmentTree" target="_blank" rel="noopener noreferrer">已完成</a></td>
+    <td class="tg-nrix"><a href="https://app.gitbook.com/s/-MeiB9SaHyf3ldMBUG1M/segment-tree-xian-duan-shu">SegmentTree 线段树[已完成]</a></td>
+    <td class="tg-nrix"><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/SegmentTree">已完成</a></td>
   </tr>
   <tr>
     <td class="tg-nrix" rowspan="2">高级排序算法</td>
@@ -133,6 +140,17 @@
     <td class="tg-nrix">QuickSort 快速排序的三个版本</td>
     <td class="tg-nrix"><a href="https://chesterzhang666.gitbook.io/data-structures-and-algorithms/gao-ji-pai-xu-suan-fa/quick-sort-kuai-su-pai-xu">QuickSort 快速排序[已完成]</a></td>
     <td class="tg-nrix"><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/QuickSort">已完成</a></td>
+  </tr>
+  <tr>
+    <td class="tg-nrix" rowspan="2">Dynamic Programming动态规划</td>
+    <td class="tg-nrix">从斐波那契数列 开始学习动态规划 </td>
+    <td class="tg-nrix">从斐波那契数列 开始学习动态规划 [未完成]</td>
+    <td class="tg-nrix"><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/DynamicProgramming/src/Fib" target="_blank" rel="noopener noreferrer">已完成</a></td>
+  </tr>
+  <tr>
+    <td class="tg-nrix">leetcode 练习(70,343)</td>
+    <td class="tg-nrix">动态规划 leetcode 练习 [未完成]</td>
+    <td class="tg-nrix"><a href="https://github.com/chesterzhang/Data-Structures-and-Algorithms/tree/zhc_dev/DynamicProgramming/src/leetcode" target="_blank" rel="noopener noreferrer">更新中</a></td>
   </tr>
 </tbody>
 </table>
