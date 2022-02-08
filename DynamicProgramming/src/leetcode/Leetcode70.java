@@ -1,6 +1,7 @@
 package leetcode;
 
-public class leetcode70 {
+// 将 类的名称换成 Solution 即可
+public class Leetcode70 {
 
     int[] memo;
 
@@ -12,33 +13,32 @@ public class leetcode70 {
             memo[i]=-1;
         }
 
+        if (n>=1){
+            memo[1]=1;
+        }
+        if (n>=2){
+            memo[2]=2;
+        }
+
         return dfs(n);
     }
 
-    private int dfs(int remainStairs){
+    private int dfs(int n){
 
-        if (remainStairs==1){
-            memo[1]=1;
+        if (n==1){
             return 1;
         }
-        if (remainStairs==2){
-            memo[2]=2;
+        if (n==2){
             return 2;
         }
 
-        if (memo[remainStairs]!=-1){
-            return memo[remainStairs];
+        if (memo[n]!=-1){
+            return memo[n];
         }
 
-        if (remainStairs-1>=1){
-            memo[remainStairs-1]=dfs(remainStairs-1);
-        }
-        if (remainStairs-2>=1){
-            memo[remainStairs-2]=dfs(remainStairs-2);
-        }
+        memo[n]=dfs(n-1)+dfs(n-2);
 
-        memo[remainStairs]=memo[remainStairs-1]+memo[remainStairs-2];
-        return  memo[remainStairs];
+        return  memo[n];
     }
 
     //动态规划,自底向上
@@ -51,8 +51,12 @@ public class leetcode70 {
         }
 
         memo=new int[n+1];
-        memo[1]=1;
-        memo[2]=2;
+        if (n>=1){
+            memo[1]=1;
+        }
+        if (n>=2){
+            memo[2]=2;
+        }
 
         for (int i = 3; i <=n ; i++) {
             memo[i]=memo[i-1]+memo[i-2];
