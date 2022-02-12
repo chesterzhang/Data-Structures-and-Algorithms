@@ -1,8 +1,6 @@
 public class SelectionSort  {
-
     private SelectionSort() {
     }
-
     public  static <T extends Comparable<T>> void sort(T[] arr){
         
         for (int i = 0; i < arr.length; i++) {
